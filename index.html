@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <title>Satori & Steam</title>
+
+    
+        <!-- Website tab icon -->
+    <link rel="icon" type="image/png" href="zelda_seal_logo.webp"  >
+    </a>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header>
+    <nav class="navbar">
+
+              <!-- Link sa logo naka inject -->
+        <div class="nav-logo">
+        <a href="https://zelda.fandom.com/wiki/Zelda_Wiki"
+       target="_blank" rel="noopener noreferrer">
+            <img src="zelda_seal_logo.webp" alt="zelda logo">
+        </a>
+
+              <!-- name it cafe -->
+            <h2>Satori & Steam</h2>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+
+        </ul>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+            ☰
+        </button>
+
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">✧ A LITTLE HAVEN FOR WANDERING SOULS ✧</p>
+
+        <h1>Every journey deserves a moment of rest.</h1>
+
+        <p>
+            Good food, warm drinks, and a little magic
+            in every visit. Welcome to Satori & Steam.
+        </p>
+
+        <a href="#menu" class="main-button">Explore Our Menu →</a>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about section" id="about">
+
+    <div class="about-image">
+        <img
+            src="champions_cover.jpeg"
+            alt="Warm and cozy coffee shop interior">
+    </div>
+
+    <div class="about-content">
+        <p class="eyebrow">OUR LITTLE STORY</p>
+
+        <h2>A place to pause and enjoy the little things.</h2>
+
+        <p>
+            Inspired by the magical landscapes and peaceful
+            villages of Hyrule, Satori & Steam was imagined
+            as a cozy resting place for every traveler.
+        </p>
+
+        <p>
+            From freshly brewed coffee to delightful pastries,
+            every little detail is made to bring warmth,
+            comfort, and happiness to your day.
+        </p>
+
+        <p class="signature">— Your friendly neighborhood café ♡</p>
+    </div>
+
+</section>
+
+<!-- BEST SELLERS -->
+<section class="section featured">
+    <div class="section-heading">
+        <p class="eyebrow">A TASTE OF HAPPINESS</p>
+        <h2>Our Best Sellers</h2>
+        <p>Little favorites worth coming back for.</p>
+    </div>
+
+    
+<div class="food-grid">
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600"
+             alt="Matcha latte">
+        <div class="food-info">
+            <span class="tag">CUSTOMER FAVORITE</span>
+            <h3>Korok Matcha</h3>
+            <p>Earthy matcha blended with creamy milk.</p>
+            <strong class="rupee-price">
+                <img src="green-rupee.png" alt="Rupees">150
+            </strong>
+        </div>
+    </article>
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600"
+             alt="Iced caramel coffee">
+        <div class="food-info">
+            <span class="tag">BEST SELLER</span>
+            <h3>Hylian Honey Latte</h3>
+            <p>Rich espresso with milk and sweet honey.</p>
+            <strong class="rupee-price">
+                <img src="green-rupee.png" alt="Rupees">140
+            </strong>
+        </div>
+    </article>
+
+    <article class="food-card">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600"
+             alt="Freshly baked croissant">
+        <div class="food-info">
+            <span class="tag">FRESHLY BAKED</span>
+            <h3>Golden Croissant</h3>
+            <p>Flaky, buttery, and freshly baked.</p>
+            <strong class="rupee-price">
+                <img src="green-rupee.png" alt="Rupees">95
+            </strong>
+        </div>
+    </article>
+
+</div>
+</section>
+
+<!-- MENU SECTION -->
+<section class="section menu-section" id="menu">
+
+    <div class="section-heading">
+        <p class="eyebrow">FRESH FROM OUR LITTLE KITCHEN</p>
+        <h2>Our Menu</h2>
+        <p>Find your favorite treat, traveler.</p>
+    </div>
+
+    <!-- CATEGORY FILTERS -->
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="coffee">Coffee</button>
+        <button class="filter-btn" data-category="drinks">Drinks</button>
+        <button class="filter-btn" data-category="pastries">Pastries</button>
+        <button class="filter-btn" data-category="desserts">Desserts</button>
+    </div>
+
+    <div class="menu-grid">
+
+        <article class="menu-card" data-category="coffee">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500"
+                 alt="Iced caramel latte">
+            <div class="menu-info">
+                <h3>Hylian Honey Latte</h3>
+                <p>Espresso, milk, and honey.</p>
+                <div class="menu-bottom">
+                    <strong class="rupee-price">
+                        <img src="green-rupee.png" alt="Rupees">140
+                    </strong>
+                </div>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=500"
+                 alt="Green matcha latte">
+            <div class="menu-info">
+                <h3>Korok Matcha</h3>
+                <p>Fresh and creamy green matcha.</p>
+                <div class="menu-bottom">
+                    <strong class="rupee-price">
+                        <img src="green-rupee.png" alt="Rupees">150
+                    </strong>
+                </div>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="pastries">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500"
+                 alt="Golden butter croissant">
+            <div class="menu-info">
+                <h3>Golden Croissant</h3>
+                <p>Buttery and freshly baked pastry.</p>
+                <div class="menu-bottom">
+                    <strong class="rupee-price">
+                        <img src="green-rupee.png" alt="Rupees">95
+                    </strong>
+                </div>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500"
+                 alt="Chocolate cake">
+            <div class="menu-info">
+                <h3>Goron Chocolate Cake</h3>
+                <p>Rich chocolate cake for sweet cravings.</p>
+                <div class="menu-bottom">
+                    <strong class="rupee-price">
+                        <img src="green-rupee.png" alt="Rupees">160
+                    </strong>
+                </div>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500"
+                 alt="Hot cappuccino">
+            <div class="menu-info">
+                <h3>Traveler's Cappuccino</h3>
+                <p>Classic espresso with silky milk foam.</p>
+                <div class="menu-bottom">
+                    <strong class="rupee-price">
+                        <img src="green-rupee.png" alt="Rupees">130
+                    </strong>
+                </div>
+            </div>
+        </article>
+
+        <article class="menu-card" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500"
+                 alt="Strawberry cheesecake">
+            <div class="menu-info">
+                <h3>Silent Princess Cake</h3>
+                <p>Soft cheesecake with fruity sweetness.</p>
+                <div class="menu-bottom">
+                    <strong class="rupee-price">
+                        <img src="green-rupee.png" alt="Rupees">170
+                    </strong>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+
+
+</section>
+
+<!-- GALLERY -->
+<section class="section gallery-section" id="gallery">
+
+    <div class="section-heading">
+        <p class="eyebrow">LITTLE MOMENTS</p>
+        <h2>Our Gallery</h2>
+        <p>A glimpse into our cozy little world.</p>
+    </div>
+
+    <div class="gallery-grid">
+        <img
+            src="link_cooking.jfif"
+            alt="Coffee and café atmosphere">
+
+        <img
+            src="eating_wchamps.jfif"
+            alt="Cozy café interior">
+
+        <img
+            src="link_posing.jpg"
+            alt="Freshly baked bread">
+
+        <img
+            src="private_photo_link.jpg"
+            alt="Coffee being served">
+    </div>
+
+</section>
+
+
+<!-- VISIT US -->
+<section class="visit-section" id="visit">
+
+    <div class="visit-layout">
+
+        <!-- LEFT KOROK -->
+        <div class="korok-character korok-left">
+            <img src="korok.webp" alt="Korok">
+            <div class="korok-message">
+                Ya ha ha! You found me!
+            </div>
+        </div>
+
+        <!-- CENTER CONTENT -->
+        <div class="visit-content">
+
+            <p class="eyebrow">YOUR NEXT RESTING PLACE</p>
+            <h2>Come visit us, traveler.</h2>
+
+            <p>
+                Take a break from your adventures and enjoy
+                a warm cup of coffee with us.
+            </p>
+
+            <div class="visit-details">
+                <div>
+                    <h3>Opening Hours</h3>
+                    <p>Monday – Saturday</p>
+                    <p>9:00 AM – 8:00 PM</p>
+                    <p>Sunday: 10:00 AM – 6:00 PM</p>
+                </div>
+
+                <div>
+                    <h3>Find Us</h3>
+                    <p>Hyrule Village, Main Street</p>
+                    <p>Near the Great Deku Tree</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- RIGHT HESTU -->
+        <div class="korok-character korok-right">
+            <img src="hestu_korok.png" alt="Hestu">
+            <div class="korok-message">
+                *Dances*
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <h2>✳ Satori & Steam</h2>
+    <p>A little rest for the wandering soul.</p>
+
+    <!-- Socials -->
+     <div class="social-links">
+    <a href="https://github.com/timoyyyyraghhhh" target="_blank" rel="noopener noreferrer"aria-label="Visit my Github">
+        <i class="fa-brands fa-github"></i>
+        
+    </a>
+
+
+    <a href="https://www.facebook.com/timothy.israellabitag" target="_blank" rel="noopener noreferrer" aria-label="Visit my Facebook">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/timo__notonduty/" target="_blank" rel="noopener noreferrer" aria-label="Visit my Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+</div>
+
+
+
+    <p class="footer-note">
+        <a href="https://en.wikipedia.org/wiki/All_rights_reserved"
+           target="_blank"
+           rel="noopener noreferrer">©</a>
+        Satori & Steam | Made with ♡ and a little magic
+    </p>
+
+    <a href="#home">Back to the top ↑</a>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
